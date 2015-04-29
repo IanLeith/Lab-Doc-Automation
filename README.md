@@ -3,9 +3,9 @@ This software is intended to allow users to create their own protocols and autom
 
 Projects:
 
-Open a File
+Open & parse a File:
+Open the file, read contents into array. Iterate over elements in the array w/ counter until it reaches "\\" then copy the number of previous elements into a new array. This will give us each page of the protocol as its own array. Then we can take user inputs on that page as variables to be inserted in final document after each step.
 
-Parse file
 
 Save a file
 
