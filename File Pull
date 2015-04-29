@@ -1,0 +1,25 @@
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
+
+
+
+public class FuckJava {
+	public void something(string Filename) {
+		List<String> numbers = new ArrayList<>(); 
+		try {
+			// Pass file contents as strings to array
+			for (String line : Files.readAllLines(Paths.get(Filename))){
+			    //for (String part : line.split("\n")) {
+			        //String i = String.valueOf(part);
+			        numbers.add(line);
+			    //}
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}
